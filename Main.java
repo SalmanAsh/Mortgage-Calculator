@@ -23,11 +23,11 @@ public class Main {
                 / (Math.pow(1 + monthlyRate, numberOfPayments) - 1);
 
         String mortgageFormatted = NumberFormat.getCurrencyInstance().format(mortgage);
-        System.out.println("Mortage: " + mortgageFormatted);
+        System.out.println("Monthly payment: " + mortgageFormatted);
 
         float totalAmountPaid = (float) mortgage * monthInYear * years;
         String totalAmountPaidFormatted = NumberFormat.getCurrencyInstance().format(totalAmountPaid);
-        System.out.println("Total amount paid to the bank: " + totalAmountPaidFormatted);
+        System.out.println("Total amount paid to the bank in " + years + " years: " + totalAmountPaidFormatted);
 
         float InterestPaid = totalAmountPaid - amount;
         String InterestPaidFormatted = NumberFormat.getCurrencyInstance().format(InterestPaid);
