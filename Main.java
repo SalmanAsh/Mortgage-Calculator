@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         int monthInYear = 12;
         int percent = 100;
-        int amount = 0;
+        int amount;
         float annualRate;
         float monthlyRate;
         int years;
